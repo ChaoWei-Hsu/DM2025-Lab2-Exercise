@@ -2,7 +2,7 @@ python-dotenv==1.1.1
 google-genai==1.33.0
 langextract==1.0.9
 gensim==4.3.3
-tensorflow==2.20.0
+tensorflow==2.16.1
 tensorflow-hub==0.16.1
 keras==3.11.3
 ollama==0.5.3
