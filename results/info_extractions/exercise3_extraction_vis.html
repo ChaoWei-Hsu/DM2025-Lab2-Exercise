@@ -1,0 +1,225 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Dune: Part Two <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">sacrifices intimate character-based storytelling for epic 
+spectacle</span>,  
+resulting in a grand vision for <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">a narrative that feels thematically barren and 
+visually dry</span>.  
+It does not bode well for the rest of the film that <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">Butler&#x27;s Feyd-Rautha has better  
+chemistry with his own uncle, Baron Harkonnen, than Chalamet does with 
+Zendaya&#x27;s Chani</span>. 
+(Source: Wooder&#x27;s Reviews) 
+
+You’re going to see people throw around the word “masterpiece” about Dune: 
+Part Two and  
+I’m not going to sit here and tell you they are wrong. It very well might be. <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">The 
+effects  
+in this movie are gorgeous</span>. Sometimes I get down on CGI but <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">I found a lot of what 
+I was  
+looking at to be stunning</span>. Most significantly, Paul being sent on the challenge of 
+riding  
+a sandworm. <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">This is a gorgeous, triumphant-looking scene</span>. (Source: UPROXX) 
+
+<span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">It’s a breathtaking piece of blockbuster art</span> that, like its predecessor, <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">makes a 
+dense  
+sci-fi world magically tangible</span>. It engulfs your mind in the spice melange; <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">it’s a 
+movie  
+that you don’t just watch but experience</span>. (Source: Cinemablend) 
+
+<span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">Zendaya holds the film in her palm, with resolution and clarity</span>. (Source: The 
+Independent)
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="9" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/10</span> |
+          Pos <span id="posInfo">[30-98]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "sacrifices intimate character-based storytelling for epic spectacle", "color": "#C8E6C9", "startPos": 30, "endPos": 98, "beforeText": "**Page 1**\n&quot;&quot;&quot;\nDune: Part Two ", "extractionText": "sacrifices intimate character-based storytelling for epic \nspectacle", "afterText": ",  \nresulting in a grand vision for a narrative that feels thematically barren and \nvisually dry.  \nIt does not bode well for the rest of the film tha", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Dune: Part Two</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">sacrifices intimate character-based storytelling for epic spectacle</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "a narrative that feels thematically barren and visually dry", "color": "#C8E6C9", "startPos": 134, "endPos": 194, "beforeText": "**Page 1**\n&quot;&quot;&quot;\nDune: Part Two sacrifices intimate character-based storytelling for epic \nspectacle,  \nresulting in a grand vision for ", "extractionText": "a narrative that feels thematically barren and \nvisually dry", "afterText": ".  \nIt does not bode well for the rest of the film that Butler&#x27;s Feyd-Rautha has better  \nchemistry with his own uncle, Baron Harkonnen, than Chalamet", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The narrative</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">thematically barren and visually dry</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "Butler's Feyd-Rautha has better chemistry with his own uncle, Baron Harkonnen, than Chalamet does with Zendaya's Chani", "color": "#C8E6C9", "startPos": 250, "endPos": 371, "beforeText": " \nresulting in a grand vision for a narrative that feels thematically barren and \nvisually dry.  \nIt does not bode well for the rest of the film that ", "extractionText": "Butler&#x27;s Feyd-Rautha has better  \nchemistry with his own uncle, Baron Harkonnen, than Chalamet does with \nZendaya&#x27;s Chani", "afterText": ". \n(Source: Wooder&#x27;s Reviews) \n \nYou\u2019re going to see people throw around the word \u201cmasterpiece\u201d about Dune: \nPart Two and  \nI\u2019m not going to sit here ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Chemistry between characters</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">better chemistry with his own uncle... than Chalamet does with Zendaya&#x27;s Chani</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "The effects in this movie are gorgeous", "color": "#C8E6C9", "startPos": 573, "endPos": 614, "beforeText": " people throw around the word \u201cmasterpiece\u201d about Dune: \nPart Two and  \nI\u2019m not going to sit here and tell you they are wrong. It very well might be. ", "extractionText": "The \neffects  \nin this movie are gorgeous", "afterText": ". Sometimes I get down on CGI but I found a lot of what \nI was  \nlooking at to be stunning. Most significantly, Paul being sent on the challenge of \nr", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The effects</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">gorgeous</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "I found a lot of what I was looking at to be stunning", "color": "#C8E6C9", "startPos": 648, "endPos": 704, "beforeText": " not going to sit here and tell you they are wrong. It very well might be. The \neffects  \nin this movie are gorgeous. Sometimes I get down on CGI but ", "extractionText": "I found a lot of what \nI was  \nlooking at to be stunning", "afterText": ". Most significantly, Paul being sent on the challenge of \nriding  \na sandworm. This is a gorgeous, triumphant-looking scene. (Source: UPROXX) \n \nIt\u2019s", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Visuals</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">stunning</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "This is a gorgeous, triumphant-looking scene", "color": "#C8E6C9", "startPos": 784, "endPos": 828, "beforeText": "wn on CGI but I found a lot of what \nI was  \nlooking at to be stunning. Most significantly, Paul being sent on the challenge of \nriding  \na sandworm. ", "extractionText": "This is a gorgeous, triumphant-looking scene", "afterText": ". (Source: UPROXX) \n \nIt\u2019s a breathtaking piece of blockbuster art that, like its predecessor, makes a \ndense  \nsci-fi world magically tangible. It en", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Paul being sent on the challenge of riding a sandworm</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">gorgeous, triumphant-looking</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "It\u2019s a breathtaking piece of blockbuster art", "color": "#C8E6C9", "startPos": 850, "endPos": 894, "beforeText": "ning. Most significantly, Paul being sent on the challenge of \nriding  \na sandworm. This is a gorgeous, triumphant-looking scene. (Source: UPROXX) \n \n", "extractionText": "It\u2019s a breathtaking piece of blockbuster art", "afterText": " that, like its predecessor, makes a \ndense  \nsci-fi world magically tangible. It engulfs your mind in the spice melange; it\u2019s a \nmovie  \nthat you don", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">breathtaking piece of blockbuster art</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "makes a dense sci-fi world magically tangible", "color": "#C8E6C9", "startPos": 923, "endPos": 971, "beforeText": " sandworm. This is a gorgeous, triumphant-looking scene. (Source: UPROXX) \n \nIt\u2019s a breathtaking piece of blockbuster art that, like its predecessor, ", "extractionText": "makes a \ndense  \nsci-fi world magically tangible", "afterText": ". It engulfs your mind in the spice melange; it\u2019s a \nmovie  \nthat you don\u2019t just watch but experience. (Source: Cinemablend) \n \nZendaya holds the film", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">magically tangible</span>}</div>"}, {"index": 8, "class": "audience_impact", "text": "it\u2019s a movie that you don\u2019t just watch but experience", "color": "#D2E3FC", "startPos": 1016, "endPos": 1072, "beforeText": "ing piece of blockbuster art that, like its predecessor, makes a \ndense  \nsci-fi world magically tangible. It engulfs your mind in the spice melange; ", "extractionText": "it\u2019s a \nmovie  \nthat you don\u2019t just watch but experience", "afterText": ". (Source: Cinemablend) \n \nZendaya holds the film in her palm, with resolution and clarity. (Source: The \nIndependent)\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\n\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">immersive</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "Zendaya holds the film in her palm, with resolution and clarity", "color": "#C8E6C9", "startPos": 1099, "endPos": 1162, "beforeText": "rld magically tangible. It engulfs your mind in the spice melange; it\u2019s a \nmovie  \nthat you don\u2019t just watch but experience. (Source: Cinemablend) \n \n", "extractionText": "Zendaya holds the film in her palm, with resolution and clarity", "afterText": ". (Source: The \nIndependent)\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\n\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Zendaya&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">holds the film in her palm, with resolution and clarity</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
